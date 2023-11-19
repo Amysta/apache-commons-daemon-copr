@@ -1,0 +1,11 @@
+--- commons-daemon-1.2.0-src/src/native/unix/configure.in-orig	2019-06-28 10:21:30.000000000 -0300
++++ commons-daemon-1.2.0-src/src/native/unix/configure.in	2019-07-10 03:53:58.900381022 -0300
+@@ -98,7 +98,7 @@
+   AC_MSG_RESULT([jni_md.h found in $JAVA_HOME/$JAVA_INC])
+   INCLUDES="$INCLUDES -I$JAVA_HOME/include -I$JAVA_HOME/$JAVA_INC"
+ else
+-  INCLUDES="$INCLUDES -I$JAVA_HOME/include -I$JAVA_HOME/include/$supported_os"
++  INCLUDES="$INCLUDES -I$JAVA_HOME/include -I$JAVA_HOME/include/$JAVA_OS"
+ fi
+ 
+ dnl -------------------------------------------------------------------------
