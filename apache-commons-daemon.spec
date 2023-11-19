@@ -103,6 +103,9 @@ install -Dpm 644 src/native/unix/jsvc.1 $RPM_BUILD_ROOT%{_mandir}/man1/jsvc.1
 
 
 %changelog
+* Sun Nov 19 2023 Olivier Lemasle <o.lemasle@gmail.com> 1.2.4-1
+- new package built with tito
+
 * Sat Jan 30 2021 Fabio Valentini <decathorpe@gmail.com> - 1.2.4-1
 - Update to version 1.2.4.
 
