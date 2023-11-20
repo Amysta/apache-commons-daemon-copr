@@ -2,7 +2,7 @@
 %define java_path %(dirname $(dirname $(readlink -f $(which javac))))
 Name:           apache-%{short_name}
 Version:        1.3.4
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Commons Daemon - Controlling of Java Daemons
 URL:            https://commons.apache.org/daemon/
 License:        Apache-2.0
@@ -67,7 +67,10 @@ exit 0
 %{_bindir}/jsvc
 
 %changelog
-* Fri Oct 27 2023 Armando Basile <info@tasolutionsrls.it> 1.3.4-3
+* Mon Nov 20 2023 Olivier Lemasle <olivier.lemasle@apalia.net> - 1.3.4-4
+- New build
+
+* Fri Oct 27 2023 Armando Basile <info@tasolutionsrls.it> - 1.3.4-3
 - release 1.3.4
 
 
